@@ -100,6 +100,9 @@ function Payment() {
                                     "Buy Now"}</span>
                                 </button>
                             </div>
+
+                            {/**Handle Errors */}
+                            {error && <div>{error}</div>}
                          </form>
                  </div>
                 </div>
