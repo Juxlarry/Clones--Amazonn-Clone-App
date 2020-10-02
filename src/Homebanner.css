@@ -1,0 +1,27 @@
+.homebanner {
+    display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     justify-content: center;
+     width:100%;
+     max-width: 1500px;
+     margin-top: 50px;
+     z-index: -1;
+     margin-bottom: -285px; 
+     mask-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+ }
+ 
+ /* .home_image{
+   width:100%; 
+   z-index: -1;
+   margin-bottom: -285px; 
+   mask-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+ } */
+ 
+ /* display: flex;
+ margin-left: auto;
+ margin-right: auto;
+ justify-content: center;
+ max-width: 1500px; */

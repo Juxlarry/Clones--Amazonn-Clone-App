@@ -1,0 +1,40 @@
+Item 1 
+Title: "The lean startup"  
+image= https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SX329_BO1,204,203,200_.jpg
+price = 29.99
+rating = 4
+
+Item 2
+Title: "Microsoft Xbox One S 1TB Console with Xbox One Wireless Controller - Robot White"  
+image= https://images-na.ssl-images-amazon.com/images/I/41wNqTxUoGL._AC_US218_.jpg
+price = 389.00
+rating = 4.5
+
+Item 3 
+title: " Uniden SR30C BearCat, 500-Channel Compact Handheld Scanner, Close Call RF Capture technology, Turbo Search, PC programming, NASCAR, Auto Racing, Public Safety, Police, Fire, EMS, Marine, Civil Air "
+image = https://m.media-amazon.com/images/I/61B1DcbgrLL._AC_UL320_.jpg
+Price : 98.15
+Rating = 4
+
+Item 4 
+Title: " Profit with JavaScript - A course that’ll teach you how to complete real-world projects and make a living as a modern JavaScript and React web developer."  
+image= https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/a3liO9nUSCyEhyiAnDOw_Profit-with-JavaScript-new.jpg
+price = 497.00
+rating = 4.5
+
+video: <p><a href="https://www.cleverprogrammer.com/pwj?wvideo=dnfccg6dlr"><img src="https://embedwistia-a.akamaihd.net/deliveries/457b6e8d08629da06c89136a50547a2f.jpg?wistia-dnfccg6dlr-1-dnfccg6dlr-video-thumbnail=1&amp;image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=1e71e7e0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://www.cleverprogrammer.com/pwj?wvideo=dnfccg6dlr">Profit with JavaScript</a></p>
+
+
+Item 5
+title: " The Self-Taught Programmer: The Definitive Guide to Programming Professionally "
+image = https://m.media-amazon.com/images/I/71Hb1JYfJhL._AC_UY218_.jpg
+Price : 98.15
+Rating = 4
+
+Item 6
+title: " Apple 13.3" MacBook Pro with Touch Bar, Intel Core i5 Quad-Core, 8GB RAM, 128GB SSD - Mid 2019, Space Gray, MUHN2LL/A (Renewed) "
+image = https://m.media-amazon.com/images/I/71i49M4hv2L._AC_UY218_.jpg
+Price : 1,099.00
+Rating = 4.5
+
+

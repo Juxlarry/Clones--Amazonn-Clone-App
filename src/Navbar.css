@@ -1,0 +1,121 @@
+.nav {
+    height: 39px;
+    padding-top: 0;
+    display: flex;
+    position: static;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    transform: translate3d(0,0,0);
+    z-index: 4;
+    background-position: 0 -725px;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1em;
+    flex-flow: row nowrap;
+    -webkit-box-sizing: border-box;
+}
+
+.nav__main {
+    display: flex;
+    background-image: none;
+    background-color: #232f3e; 
+}
+
+.nav__main__sprite {
+    display: flex;
+    background-color: white;
+    width: 22px;
+    height: 22px;
+    background-position: -68px -340px;
+    left: 2px;
+    top: 8px;
+    margin-right: 0px;
+    margin-top: 5px;
+}
+
+.nav__option {
+    display: flex;
+    flex-direction: column;
+    color: white; 
+    margin-left: 10px;
+    /* margin-right: 10px; */
+}
+
+.nav__left {
+    display: flex;
+    margin-right: 1px;
+    height: 39px;
+    width: auto;
+    margin: 0 20px;
+    font-size: 12px;
+}
+
+.nav__optionLineOne {
+    font-size: 10px;
+}
+
+.nav__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.nav__fill {
+    display: flex;
+    justify-content: flex-end;;
+    white-space: nowrap;
+    margin-top: 0;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    -webkit-box-align: end;
+    position: static;
+    float: none;
+    flex: 0.3 auto;
+}
+
+.nav__fill a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 21px;
+    font-size: 16px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+
+.nav__right {
+    display: flex;
+    position: static;
+    float: none;
+    white-space: pre;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    padding: 5px 8px 6px 8px;
+    margin: 6px 2px 7px 1px;
+    box-shadow: none;
+    font-family: inherit;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+
+.nav__right:hover {
+    text-decoration: none;
+    margin: 5px 1px 6px 0;
+    border: 1px solid;
+    border-radius: 2px;
+    box-shadow: none;
+    margin-left: auto;
+}
+
+
+.nav__optionRoom {
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
