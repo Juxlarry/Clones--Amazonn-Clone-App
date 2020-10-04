@@ -1,26 +1,60 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css'
 import { useStateValue } from './StateProvider';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import { getBasketTotal } from './Reducer';
 import CurrencyFormat from 'react-currency-format';
+import axios from './axios';
 
 function Payment() {
 
     const [{ basket, user }, dispatch] = useStateValue();
-    
+    const history = useHistory(); 
+
     const stripe = useStripe(); 
     const elements = useElements();
 
-    const [succeeded, UseSucceded] = useState(false); 
+    const [succeeded, setSucceeded] = useState(false); 
     const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null); 
     const [disabled, setDisabled] = useState(true);
+    const [clientSecret, setClientService] = useState(true);
 
-    const handleSubmit = e => {
+    useEffect(() => {
+        //generate special stripe secret to charge a customer
+
+        const getClientSecret = async () => {
+             const response = await axios ({
+                 method: 'post', 
+                 url: `/payment/create?total=${getBasketTotal(basket) * 100}`
+             });
+             setClientService(response.data.clientSecret)
+        }
+
+        getClientSecret();
+    }, [basket])
+
+    const handleSubmit = async  (event) => {
         // do all the fancy stripe stuff ....
+        event.preventDefault(); 
+        setProcessing(true);
+
+        const payload = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
+                card: elements.getElement(CardElement)
+            }
+        }).then(({ paymentIntent }) => {
+            // PaymentIntent = payment confirmation 
+
+            setSucceeded(true); 
+            setError(null); 
+            setProcessing(false)
+
+            history.replace ('/orders')
+        })
+
     }
     const handleChange = event => {
         //Listen for changes in the Card element
